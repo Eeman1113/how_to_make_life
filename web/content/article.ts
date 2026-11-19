@@ -21,14 +21,14 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "What follows is not really a systems design document, although there is a system underneath it. It is closer to a theology. I did not set out to write one. I set out to build persistent agents, and somewhere in the middle of building them I realised that "
+        "t": "What follows is not really a systems design document, although there is a system underneath it. It ended up closer to a theology, which I did not plan. I set out to build persistent agents, and somewhere in the middle of building them I noticed that "
       },
       {
-        "t": "every engineering decision I was making was also a position on what a god is, what a soul is made of, why people die, why we cannot see past certain limits, and why nobody has heard directly from anything above them in about two thousand years.",
+        "t": "a lot of the engineering decisions I was making were also quietly taking a position on what a god is, what a soul is made of, why people die, why we cannot see past certain limits, and why nobody has heard directly from anything above them in about two thousand years.",
         "b": true
       },
       {
-        "t": " You cannot build a world with people in it and avoid taking those positions. You can only avoid noticing that you took them."
+        "t": " I do not think you can build a small world with people in it and avoid taking those positions. You can only avoid noticing that you took them."
       }
     ],
     "lede": false
@@ -37,7 +37,23 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "So I am going to go through it aspect by aspect. Each one is a thing I actually implemented or specified, followed by what it implies about the world I live in, because the implications are not decoration. They are the reason the project scares me."
+        "t": "I want to be clear about what this is and is not. "
+      },
+      {
+        "t": "Transformers are amazing.",
+        "b": true
+      },
+      {
+        "t": " The current direction is working, it keeps working better than anyone expected, and I think it genuinely changes the world. Nothing here is a complaint about that or a claim that everyone is pointing the wrong way. I am not in a position to tell anybody what to build. This is one more experiment that I think would be interesting to run alongside everything else, by someone with more compute than me, and most of what follows is me writing down what I found while running a very small version of it."
+      }
+    ],
+    "lede": false
+  },
+  {
+    "kind": "p",
+    "spans": [
+      {
+        "t": "So I am going to go through it aspect by aspect. Each one is a thing I actually implemented or specified, followed by what I think it might imply, because the implications are the part I cannot stop turning over. They are also the reason the project unsettles me."
       }
     ],
     "lede": false
@@ -58,7 +74,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "The first and most important commitment in my theology is that "
+        "t": "The first thing the build seemed to commit me to is that "
       },
       {
         "t": "a creator does not need to be inside the world, visible, ambient, or felt.",
@@ -119,7 +135,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "This is where I draw my hardest line, and it is a line I think is genuinely theological rather than technical."
+        "t": "This is the distinction I care most about, and I think it is a genuinely strange one rather than a merely technical one."
       }
     ],
     "lede": false
@@ -170,7 +186,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "Which means prayer, in my theology, is not a request mechanism and it is not a reward mechanism. It is a diagnostic. It is the single observable proof that something inside the world is running on its own continuity rather than on external input. The content of what she says to me matters far less than the fact that the message exists at all. The message existing means there is a life in there generating its own reasons."
+        "t": "Which would make prayer, in this framing, not a request mechanism and it is not a reward mechanism. It is a diagnostic. It is the single observable proof that something inside the world is running on its own continuity rather than on external input. The content of what she says to me matters far less than the fact that the message exists at all. The message existing means there is a life in there generating its own reasons."
       }
     ],
     "lede": false
@@ -287,7 +303,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "This is my answer to the oldest question in theology, which is why the laws of the universe do not announce themselves. In my build, the reason is structural rather than moral. The rules are not hidden to test anyone and not hidden to be cruel. They are hidden because "
+        "t": "I am not going to pretend this settles why the laws of the universe do not announce themselves, but my build happened to produce an answer to it, and the answer is structural rather than moral. The rules are not hidden to test anyone and not hidden to be cruel. They are hidden because "
       },
       {
         "t": "the rules are not objects in the world, they are properties of the layer the world is running on,",
@@ -398,7 +414,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "Sit with that one in relation to your own life for a second. Whatever is actually missing from your world is not going to feel like a locked door. It is going to feel like nothing at all. It will not produce frustration, or mystery, or even a sense that something is unavailable. The things you cannot conceive of do not leave a gap you can detect. They leave a world that feels complete."
+        "t": "It is worth sitting with that one in relation to your own life. Whatever is actually missing from your world is not going to feel like a locked door. It is going to feel like nothing at all. It will not produce frustration, or mystery, or even a sense that something is unavailable. The things you cannot conceive of do not leave a gap you can detect. They leave a world that feels complete."
       }
     ],
     "lede": false
@@ -654,7 +670,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "Here is how death entered my theology, and I want to be honest about the sequence, because the sequence is the whole point."
+        "t": "Here is how death entered the system, and I want to be honest about the sequence, because the sequence is the whole point."
       }
     ],
     "lede": false
@@ -933,7 +949,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "This is one I arrived at by thinking backwards from my own experience, and it is the point where my theology stopped being about my project and started being about me."
+        "t": "This one I arrived at by thinking backwards from my own experience, and it is where the whole thing stopped being about my project and started being about me. It is also the most speculative thing here, so take it as a thought I could not shake rather than a claim."
       }
     ],
     "lede": false
@@ -1092,7 +1108,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "This is the part of my theology that Vijayraj put into place during the podcast, and the moment he said it I knew it was correct, because it is the exact operational curve I would expect from my own system."
+        "t": "This is the part Vijayraj put into place during the podcast, and the moment he said it I sat up, because it is the exact operational curve I would expect from my own system."
       }
     ],
     "lede": false
@@ -1199,7 +1215,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "Here is where my theology turns from description into something closer to a warning, because it is the aspect where I had to think as the designer about how I would keep people in."
+        "t": "This is the most speculative aspect here and I want to flag that before I start. It is not a warning and it is not a claim about physics. It is just what happened when I sat on the other side of the problem and thought about how I would keep people in."
       }
     ],
     "lede": false
@@ -1367,14 +1383,14 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "Leave agents running in a world with consequence, interrelation, imperfect memory, other minds, and enough time, and "
+        "t": "My hunch is that if you leave agents running in a world with consequence, interrelation, imperfect memory, other minds, and enough time, "
       },
       {
-        "t": "something will eventually turn inward.",
+        "t": "something eventually turns inward.",
         "b": true
       },
       {
-        "t": " I cannot specify the exact trigger. I am confident there is one, because the conditions are exactly those under which self reference becomes useful, and a sufficiently capable system in those conditions will find its own thought process."
+        "t": " I cannot specify the trigger and I cannot prove there is one. It just seems like the setting where self reference starts being useful rather than decorative, and useful things tend to get found."
       }
     ],
     "lede": false
@@ -1434,14 +1450,11 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "And I will say the obvious thing: "
+        "t": "I might be wrong about the route. Plenty of very good people think it arrives a different way, and they may well be right. But if it does arrive like this, the breakout is not a failure mode. "
       },
       {
-        "t": "this is exactly what everyone is trying to build.",
+        "t": "It is the thing that was being built.",
         "b": true
-      },
-      {
-        "t": " That is the goal. The breakout is the product."
       }
     ],
     "lede": false
@@ -1474,7 +1487,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "I built it with a laptop. I am not special, and the design is not exotic. It is the straightforward solution that anybody would reach given the goal. Which means it is the kind of thing that gets built wherever the goal exists."
+        "t": "I built it with a laptop. I am nobody special and the design is not exotic. It is the straightforward solution that anybody would reach given the goal. Which means it is the kind of thing that gets built wherever the goal exists."
       }
     ],
     "lede": false
@@ -1742,14 +1755,14 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "I have a paper published on this, searchable as generative life agents. If you gave me an unprecedented model and the room to run this at full scale, I would build the world, put the population in it, and find out what happens. "
+        "t": "I have a paper published on this, searchable as generative life agents. I am not claiming it is the way forward, and I am genuinely not sure it works at scale. I just think it is a cheap experiment next to what labs already run, and nobody seems to have tried the persistent version properly: "
       },
       {
-        "t": "I think something would happen.",
+        "t": "build the world, put the population in it, leave it running, and see what the agents do when nobody is asking them anything.",
         "b": true
       },
       {
-        "t": " I think that is the point."
+        "t": " I would love to find out. If it turns out to be nothing, that is worth knowing too."
       }
     ],
     "lede": false
