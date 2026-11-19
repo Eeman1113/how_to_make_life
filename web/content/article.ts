@@ -12,7 +12,7 @@ export const article: Node[] = [
     "kind": "p",
     "spans": [
       {
-        "t": "I have a very weird approach to life. I tend to view things technically and in a loopological manner, and I try to find patterns in things that do not have patterns. So where I am going with this is that LLMs have become so advanced that the new ones keep getting better and better at tasks, and I wanted to see what would happen if I put an LLM in a general environment. How will it react, how will it do, how will it behave, what will its life be like? But to do that, we first need to construct artificial life and define it in a way that I feel is correct, and after a ridiculous amount of thought, this is what I have theorised and somewhat implemented."
+        "t": "I have a very weird approach to life. I tend to view things technically and in a loop-o-logical manner, and I try to find patterns in things that do not have patterns. So where I am going with this is that LLMs have become so advanced that the new ones keep getting better and better at tasks, and I wanted to see what would happen if I put an LLM in a general environment. How will it react, how will it do, how will it behave, what will its life be like? But to do that, we first need to construct artificial life and define it in a way that I feel is correct, and after a ridiculous amount of thought, this is what I have theorised and somewhat implemented."
       }
     ],
     "lede": true

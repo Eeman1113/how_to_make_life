@@ -4,12 +4,12 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "How to Make Life",
+  title: "How to Make Life?",
   description:
     "Fifteen aspects of building persistent artificial life, and what each one commits you to.",
   authors: [{ name: "Eeman Majumder" }],
   openGraph: {
-    title: "How to Make Life",
+    title: "How to Make Life?",
     description:
       "Fifteen aspects of building persistent artificial life, and what each one commits you to.",
     type: "article",
