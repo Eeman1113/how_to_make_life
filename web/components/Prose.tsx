@@ -52,15 +52,20 @@ export default function Prose({ nodes }: { nodes: Node[] }) {
           case "figure":
             return (
               <figure key={i} className={styles.figure}>
-                <Image
-                  src={`${BASE}/figures/${n.src}.png`}
-                  alt={n.caption}
-                  width={n.w * 2}
-                  height={n.h * 2}
-                  sizes="(max-width: 900px) 100vw, 62rem"
-                  priority={i < 3}
-                />
-                <figcaption>{n.caption}</figcaption>
+                <div className={styles.figScroll}>
+                  <Image
+                    src={`${BASE}/figures/${n.src}.png`}
+                    alt={n.caption}
+                    width={n.w * 2}
+                    height={n.h * 2}
+                    sizes="(max-width: 900px) 760px, 62rem"
+                    priority={i < 2}
+                  />
+                </div>
+                <figcaption>
+                  {n.caption}
+                  <span className={styles.panHint}>drag to see all of it</span>
+                </figcaption>
               </figure>
             );
         }
