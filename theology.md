@@ -198,33 +198,26 @@ Divine silence, under this reading, is not abandonment. **It is a success condit
 
 And notice how neatly it inverts what the silence is usually taken to mean. The period of most contact was the period of least capability. We are not in the age of being ignored. We are in the age of running fine.
 
-**Aspect twelve: scientists are the ones probing the rule set, and the rule set may have been made unbreakable on purpose.**
+**Aspect twelve: inside a built world, a limit and a fact are the same thing.**
 
-This is the most speculative aspect here and I want to flag that before I start. It is not a warning and it is not a claim about physics. It is just what happened when I sat on the other side of the problem and thought about how I would keep people in.
+This one is purely about my own system, and I want to say that plainly before I start, because the idea next door to it is one I am not making. I am not suggesting that our physics is a cage, and I am not casting doubt on anybody's work. Relativity is among the best tested things we have, the people who found it were doing the real thing, and nothing I built has any bearing on it. What follows is a design observation about a toy world I wrote, and it stays there.
 
-In my world, the world building model holds the rules and the characters cannot perceive them. But characters can perceive **consequences**, and a sufficiently persistent character will eventually notice that some consequences do not make sense. That is what a scientist is. Someone who notices that a rule in their world is not adding up and refuses to stop pulling on it.
+In my world, the world building model holds the rules and the characters cannot perceive them. But characters can perceive **consequences**, and a sufficiently persistent character will eventually notice that some consequence does not add up. That is the most valuable thing a character of mine can do. It is also exactly what I would want them doing, because a population that probes its own rules is a population that is actually thinking.
 
-So the question I had to ask, as the person holding the rule set, is what happens when one of them gets all the way to the edge.
+So the question I had to answer, as the person holding the rule set, is what my world should do when one of them gets all the way to the edge of it.
 
-And I realised that **if I wanted to keep them in, I would never build a wall.** A wall is a catastrophic design error, because a wall announces that there is an outside. The moment you forbid something, you have confirmed it exists.
+The naive answer is to put a wall there. **A wall is a design error,** and working on this is what taught me why. A wall announces that there is an outside. The moment you forbid something, you have confirmed that it exists and told the character exactly where to push.
 
-**What I would build instead is a rule set hard enough that breaking through is permanently out of reach, and I would make the unreachability look like physics.**
+**The alternative is a rule set where the limit is not a prohibition at all, but simply part of the structure of the world.** Nothing is withheld. There is no edge to find. The limit is just how that world is put together, so there is nothing for the character to recognise as a limit in the first place.
 
-Consider what that would look like from inside:
+That is the whole observation, and it is really a restatement of Sira and the phone call: **inside a built world, a limit and a plain fact are the same object.** There is no measurement a character can run that separates them, because every measurement they can run is made of the world doing what it does. A constraint that behaves like structure is structure, as far as anything inside is concerned.
 
-- **A speed limit that cannot be exceeded.** Not forbidden, not guarded. Simply the structure of the thing, immovable, provable, and absolutely final.
-- **An edge to the universe that can never be observed, because the light from it has not arrived and never will.** Not hidden from you. Just permanently, mathematically unavailable.
+Which has a practical consequence for anyone running a world like this, and it is the only claim I want to make here:
 
-Both of those read as fundamental facts about reality. They also read exactly like a well designed boundary, and the entire property of a well designed boundary is that **from the inside it is indistinguishable from the truth.** It does not feel like a cage. It feels like physics, which is the only thing a perfect cage could ever feel like.
+- **You cannot tell, from inside my simulation, which parts of it are physics and which parts are budget.** The population cap, the memory decay, the things their world happens not to contain: all of it presents to them as simply the way things are.
+- **So I have to be the one keeping that list.** If I am ever going to learn anything from what the agents discover, I need to know which of their immovable facts I chose and which ones fell out of the design, because they will never be able to tell me the difference.
 
-So you get two readings of the same situation and no way to choose between them from here:
-
-- Those limits are simply how reality is, discovered by us, true everywhere.
-- Those limits are the lock, chosen rather than discovered, and the dilemma is permanent by construction. We spend forever being brilliant right up against a limit that was selected.
-
-Break Einstein's rules and maybe you see what is actually out there. Or maybe Einstein's rules are the containment and the breakthrough is not available at any level of intelligence, because it was specified not to be.
-
-I cannot resolve that. I can tell you that **as the designer of a small world, the containment strategy I would choose is the one we appear to be living inside.**
+That is a bookkeeping problem, not a metaphysical one. But it is the part I would most want to get right before running this at any real scale, because an agent reporting a discovery about its world is only interesting if you know what you put there.
 
 **Aspect thirteen: the breakout, which is the same event as AGI.**
 
@@ -264,7 +257,7 @@ Line the rest of it up and it keeps fitting:
 - **Partial thoughts.** The NPC optimisation is the first one anybody makes.
 - **Guilt.** Exactly the purpose enforcement component I would need, present in me, unexplained.
 - **Declining contact.** The curve of a system maturing past the need for supervision.
-- **Unbreakable physical limits.** The containment strategy I would choose myself.
+- **Limits that present as structure.** Not evidence of anything, but the same shape as the thing I had to build.
 - **Memory that fades by disuse.** The resource management I had to implement, running in my own head right now.
 - **Death as total erasure.** The budget mechanism, presenting as biology.
 
