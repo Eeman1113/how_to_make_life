@@ -1,0 +1,104 @@
+.wrap {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(1.25rem, 1fr)
+    [wide-start] minmax(0, var(--side))
+    [text-start] minmax(0, var(--measure)) [text-end]
+    minmax(0, var(--side)) [wide-end]
+    minmax(1.25rem, 1fr) [full-end];
+}
+
+.masthead {
+  grid-column: text;
+  padding: clamp(4rem, 12vh, 9rem) 0 clamp(3rem, 7vh, 4.75rem);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.kicker {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 0;
+}
+
+.title {
+  font-size: clamp(2.3rem, 6.2vw, 3.5rem);
+  line-height: 1.06;
+  letter-spacing: -0.033em;
+  font-weight: 500;
+  margin: 0;
+  text-wrap: balance;
+}
+
+.standfirst {
+  font-size: 1.18rem;
+  line-height: 1.56;
+  color: var(--ink-soft);
+  font-weight: 300;
+  margin: 0;
+  max-width: 30rem;
+  text-wrap: pretty;
+}
+
+.byline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  padding: 1.6rem 0 0;
+  border-top: 1px solid var(--rule);
+  margin: 1rem 0 0;
+}
+
+.byline a {
+  color: var(--muted);
+  text-decoration: none;
+  border-bottom: 1px solid var(--rule);
+}
+
+.byline a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+/* main is transparent to the grid so figures can break out of the text column */
+.main {
+  display: contents;
+}
+
+.main > * {
+  grid-column: text;
+}
+
+.footer {
+  grid-column: text;
+  margin: 4.5rem 0 0;
+  padding: 1.8rem 0 clamp(4rem, 12vh, 8rem);
+  border-top: 1px solid var(--rule);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+
+.footer p {
+  margin: 0;
+}
+
+@media (max-width: 560px) {
+  .wrap {
+    grid-template-columns:
+      [full-start] 1.25rem
+      [wide-start text-start] 1fr [text-end wide-end]
+      1.25rem [full-end];
+  }
+}

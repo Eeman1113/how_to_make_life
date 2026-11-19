@@ -1,0 +1,232 @@
+<title>Generative Life Agents</title>
+<meta name="description" content="Fifteen aspects of building persistent artificial life, and what each one commits you to.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600&family=Geist+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --paper:#FBF9F5;
+  --ground:#FBF9F5;
+  --ink:#1C1C1F;
+  --ink-soft:#44434A;
+  --muted:#6E6A62;
+  --rule:#E4DFD5;
+  --accent:#C8402F;
+  --mark:rgba(255,217,61,.42);
+  --fig-frame:transparent;
+  --fig-dim:none;
+  --measure:34rem;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ground:#121211;
+    --ink:#EBE8E1;
+    --ink-soft:#C3BFB7;
+    --muted:#908B83;
+    --rule:#2A2A27;
+    --accent:#E77365;
+    --mark:rgba(255,217,61,.22);
+    --fig-frame:#F3F0EA;
+    --fig-dim:brightness(.97) saturate(.96);
+  }
+}
+:root[data-theme="dark"]{
+  --ground:#121211;
+  --ink:#EBE8E1;
+  --ink-soft:#C3BFB7;
+  --muted:#908B83;
+  --rule:#2A2A27;
+  --accent:#E77365;
+  --mark:rgba(255,217,61,.22);
+  --fig-frame:#F3F0EA;
+  --fig-dim:brightness(.97) saturate(.96);
+}
+
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--ground);
+  color:var(--ink);
+  font-family:"Geist","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size:17.5px;
+  line-height:1.68;
+  font-weight:400;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+.wrap{
+  display:grid;
+  grid-template-columns:
+    [full-start] minmax(1.25rem,1fr)
+    [wide-start] minmax(0,14rem)
+    [text-start] minmax(0,var(--measure)) [text-end]
+    minmax(0,14rem) [wide-end]
+    minmax(1.25rem,1fr) [full-end];
+}
+.wrap > *{grid-column:text}
+
+header.masthead{
+  grid-column:text;
+  padding:clamp(4rem,12vh,9rem) 0 clamp(3rem,7vh,4.75rem);
+  display:flex;
+  flex-direction:column;
+  gap:1.5rem;
+}
+.kicker{
+  font-family:"Geist Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  font-size:.7rem;
+  font-weight:500;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0;
+}
+h1{
+  font-size:clamp(2.3rem,6.2vw,3.5rem);
+  line-height:1.06;
+  letter-spacing:-.033em;
+  font-weight:500;
+  margin:0;
+  text-wrap:balance;
+}
+.standfirst{
+  font-size:1.18rem;
+  line-height:1.56;
+  color:var(--ink-soft);
+  font-weight:300;
+  margin:0;
+  max-width:30rem;
+  text-wrap:pretty;
+}
+.byline{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem 1.1rem;
+  font-family:"Geist Mono",ui-monospace,Menlo,monospace;
+  font-size:.74rem;
+  letter-spacing:.04em;
+  color:var(--muted);
+  padding:1.6rem 0 0;
+  border-top:1px solid var(--rule);
+  margin:1rem 0 0;
+}
+.byline a{color:var(--muted);text-decoration:none;border-bottom:1px solid var(--rule)}
+.byline a:hover{color:var(--accent);border-color:var(--accent)}
+
+main{display:contents}
+main > *{grid-column:text}
+
+p{margin:0 0 1.35em;text-wrap:pretty}
+p.lede{
+  font-size:1.26rem;
+  line-height:1.56;
+  font-weight:300;
+  color:var(--ink-soft);
+  margin-bottom:2em;
+}
+strong{font-weight:600;color:var(--ink)}
+
+ul{
+  margin:0 0 1.8em;
+  padding:0;
+  list-style:none;
+  display:flex;
+  flex-direction:column;
+  gap:.68em;
+}
+li{
+  position:relative;
+  padding-left:1.35em;
+  text-wrap:pretty;
+}
+li::before{
+  content:"";
+  position:absolute;
+  left:.1em;
+  top:.72em;
+  width:.42em;
+  height:1px;
+  background:var(--accent);
+}
+
+.aspect{
+  margin:3.6rem 0 1.9rem;
+  padding-top:1.9rem;
+  border-top:1px solid var(--rule);
+  display:flex;
+  flex-direction:column;
+  gap:.6rem;
+}
+.aspect:first-of-type{margin-top:2.4rem}
+.eyebrow{
+  font-family:"Geist Mono",ui-monospace,Menlo,monospace;
+  font-size:.7rem;
+  font-weight:500;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin:0;
+}
+.aspect h2{
+  font-size:clamp(1.42rem,3.1vw,1.72rem);
+  line-height:1.26;
+  letter-spacing:-.021em;
+  font-weight:500;
+  margin:0;
+  text-wrap:balance;
+}
+.coda .eyebrow{color:var(--muted)}
+
+.fig{
+  grid-column:wide;
+  margin:2.9rem 0 3.1rem;
+  display:flex;
+  flex-direction:column;
+  gap:.85rem;
+}
+.fig img{
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:3px;
+  background:var(--fig-frame);
+  filter:var(--fig-dim);
+}
+.fig figcaption{
+  font-family:"Geist Mono",ui-monospace,Menlo,monospace;
+  font-size:.73rem;
+  line-height:1.5;
+  letter-spacing:.015em;
+  color:var(--muted);
+  max-width:var(--measure);
+  margin:0 auto;
+  text-align:center;
+}
+
+footer{
+  grid-column:text;
+  margin:4.5rem 0 0;
+  padding:1.8rem 0 clamp(4rem,12vh,8rem);
+  border-top:1px solid var(--rule);
+  font-family:"Geist Mono",ui-monospace,Menlo,monospace;
+  font-size:.74rem;
+  line-height:1.8;
+  letter-spacing:.03em;
+  color:var(--muted);
+}
+footer p{margin:0}
+
+@media (max-width:900px){
+  .fig{grid-column:text}
+}
+@media (max-width:560px){
+  body{font-size:17px}
+  .wrap{grid-template-columns:[full-start] 1.25rem [wide-start text-start] 1fr [text-end wide-end] 1.25rem [full-end]}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+::selection{background:var(--mark);color:var(--ink)}
+</style>
