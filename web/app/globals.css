@@ -9,6 +9,8 @@
   --mark: rgba(255, 217, 61, 0.42);
   --fig-frame: transparent;
   --fig-dim: none;
+  --scroll-thumb: rgba(28, 28, 31, 0.22);
+  --scroll-thumb-hover: rgba(28, 28, 31, 0.38);
 
   --measure: 34rem;
   --side: 14rem;
@@ -29,6 +31,8 @@
     --mark: rgba(255, 217, 61, 0.22);
     --fig-frame: #f3f0ea;
     --fig-dim: brightness(0.97) saturate(0.96);
+    --scroll-thumb: rgba(235, 232, 225, 0.2);
+    --scroll-thumb-hover: rgba(235, 232, 225, 0.34);
   }
 }
 
@@ -42,10 +46,39 @@
   --mark: rgba(255, 217, 61, 0.22);
   --fig-frame: #f3f0ea;
   --fig-dim: brightness(0.97) saturate(0.96);
+  --scroll-thumb: rgba(235, 232, 225, 0.2);
+  --scroll-thumb-hover: rgba(235, 232, 225, 0.34);
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* A thin, trackless scrollbar that sits quietly against either ground. */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--scroll-thumb) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+  height: 9px;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb);
+  border-radius: 99px;
+  border: 3px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scroll-thumb-hover);
 }
 
 html {
